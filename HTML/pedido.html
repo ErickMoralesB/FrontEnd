@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levantar pedido</title>
+</head>
+<body>
+    <h1>Realiza tu pedido</h1>
+    <img src="./assets/logo.png" alt="Logo" width="300px">
+
+    <form action="pedido.js">
+        <label for="Nombre">Ingresa tu nombre: </label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+        <label for="Apellido">Ingresa tu Apellido: </label>
+        <input for="text" id="Apellido" name="Apellido" placeholder="Apellido">
+        <br><br>
+
+        <label for="Numero">Teléfono: </label>
+        <input type="tel" id="Numero" name="Numero" maxlength="10" placeholder="Teléfono">
+        <br><br>
+
+        <label for="Correo">Correo: </label>
+        <input type="email" id="Correo" name="Correo" placeholder="Ej. ejemplo@correo.com">
+        <br><br>
+
+        <label for="fecha">Fecha y hora de entrega: </label>
+        <input type="datetime-local" id="fecha" name="fecha"><br><br>
+
+        <label for="Descr">Descripción general del pastel (notas o especificaciones)</label>
+        <input type="text" name="Descr" id="Descr">
+        <br><br>
+        
+        <h2>Selecciona el sabor de tu pastel:</h2><br>
+        <input type="radio" id="vainilla" name="sabores" value="Vainilla">
+        <label for="vainilla">Vainilla</label><br>
+
+        <input type="radio" id="chocolate" name="sabores" value="Chocolate">
+        <label for="chocolate">Chocolate</label><br>
+
+        <input type="radio" id="frutas" name="sabores" value="Frutas">
+        <label for="frutas">Frutas</label><br>
+
+        <input type="radio" id="imposible" name="sabores" value="Imposible">
+        <label for="imposible">Imposible</label><br>
+
+        <input type="radio" id="rompope" name="sabores" value="Rompope">
+        <label for="rompope">Rompope</label><br>
+
+        <input type="radio" id="mix" name="sabores" value="Mix">
+        <label for="mix">Mix</label>
+
+        <ul>
+            <label for="mix2">Elige el primer sabor: </label>
+            <select id="mix2" name="mix2">
+                <option value="vainilla">Vainilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="frutas">Frutas</option>
+                <option value="imposible">Imposible</option>
+                <option value="rompope">Rompope</option>
+            </select>
+            <br><br>
+
+            <label for="mix2">Elige el segundo sabor: </label>
+            <select id="mix2" name="mix2">
+                <option value="vainilla">Vainilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="frutas">Frutas</option>
+                <option value="imposible">Imposible</option>
+                <option value="rompope">Rompope</option>
+            </select>
+        </ul>    
+        
+        <h2>Selecciona los adornos para tu pastel:</h2><br>
+
+        <input type="checkbox" id="topping1" name="topping1" value="Decoracion">
+        <label for="topping1">Decoración de Disney</label><br>
+
+        <input type="checkbox" id="topping2" name="topping2" value="velas">
+        <label for="topping2">Velas de figuras</label><br>
+
+        <input type="checkbox" id="topping3" name="topping3" value="Adorno">
+        <label for="topping3">Adorno de frutas</label><br>
+
+        <input type="checkbox" id="topping4" name="topping4" value="bengala">
+        <label for="topping4">Vela de bengala</label><br>
+
+        <input type="checkbox" id="topping5" name="topping5" value="Mensaje">
+        <label for="topping5">Mensaje</label><br>
+        
+        <ul>
+            <label for="Descr">Ingrese el mensaje: </label>
+            <input type="text" name="Descr" id="Descr" maxlength="20">
+        </ul>
+        <br><br>
+
+        <input type="reset"><br><br>
+        <a href="./menuPasteleria.html">
+            <input type="button" value="Volver al menú">
+        </a><br><br>
+        <input type="button" id="boton1" name="boton1" value="Enviar" onclick="alert('Pedido completado con exito');"><br><br>
+    
+    </form>
+</body>    
+</html>
